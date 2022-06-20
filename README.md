@@ -85,16 +85,16 @@ To deploy these contracts on XinFin testnet, you first need to create some publi
    
 	```
 	Network Name: XinFin Apothem Testnet
-	New RPC URL: https://rpc.apothem.network
+	New RPC URL: https://apothemxdcpayrpc.blocksscan.io/
 	Chain ID: 51
 	```  
 3. Get some free XDC: go to a [faucet](https://faucet.apothem.network/) and enter your address, you will get 1000 XDC for testing.
 4. Open [Remix](https://remix.xinfin.network/) in your web browser, this is an online IDE where you will write, test and deploy your smart contracts.
 5. Add provided contracts in Remix and compile them in the *Solidity compiler* tab. 
 6. In the *Deploy & run transactions* tab, set the environment to *Injected Web3*. This will launch a popup page to connect with your wallet. 
-7. Create XUSD by deploying `XUSD.sol`, this will create a contract deployment transaction. The information and status of the transaction will be displayed in the terminal. 
+7. Create XUSD by deploying `XUSD.sol`, this will create a contract deployment transaction. The information and status of the transaction will be displayed in the terminal. If the deployment is successful, you can check the transaction by hash like [this](https://explorer.apothem.network/txs/0x621f1dd45aa0edef87a8d2fe3d6c0ed3bc4687cda22d6d517fdf9d322711d5d4).
 8. Create sETH and sTSLA by deploying `sAsset.sol` with corresponding parameters ``(name, symbol, initialSupply)``, `name` and `symbol` are provided in the token table, `initialSupply = 0`.
-9. After a contract is successfully deployed, you can see the instance under *Deployed Contracts*, where you can get your contract address and interact with the contract manually (e.g. if you call the `balanceOf` function of XUSD and enter your account address, you will get the number of XUSD tokens as output). 
-10. Deploy the price feed contract for each asset, test the interface and save their addresses.
+9. Deploy the price feed contract for each asset, test the interface and save their addresses.
+10. After a contract is successfully deployed, you can see the instance under *Deployed Contracts*, where you can get your contract address and interact with the contract manually (e.g. if you call the `balanceOf` function of XUSD and enter your account address, you will get the number of XUSD tokens as output). 
 
 </details>
